@@ -1,0 +1,488 @@
+/*estilos generales*/
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+header h1 {
+    color: white;
+    background-color: gray;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+header nav ul li {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:active {
+    background-color: gainsboro;
+}
+
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+main .materiales {
+    text-align: center;
+    background-color: gainsboro;
+    padding: 1rem;
+}
+
+main .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .parrafo {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.mi-clase:not(.collapsed) {
+    background-color: gainsboro;
+    border-color: gainsboro;
+
+}
+.acordion-item:not(.collapsed).acordion-button:not(.collapsed){
+    border-color: transparent;   
+}
+.accordion-button  :focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+#mesada {
+    margin: 10px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.dato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div h2 {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+
+.formato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.leyenda {
+    color: gray;
+    text-align: center;
+    padding: 2rem;
+}
+
+.form {
+    text-align: center;
+    padding: 3rem;
+}
+
+.hijo {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.c {
+    text-align: center;
+}
+
+.boton {
+    color: gray;
+}
+
+.color-boton {
+    background-color: gray;
+    color: black;
+}
+
+seccion div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+footer {
+    display: flex;
+    background-color: grey;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer div h2 {
+    text-align: center;
+    gap: 2rem;
+}
+
+/*estilos para tablet*/
+@media screen and (min-width: 600px) {
+
+
+    main div .m {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagen1 imagen2"
+            "imagen3 imagen4";
+        margin: 1rem 1rem 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .imagen1 {
+        grid-area: imagen1;
+    }
+
+    .imagen2 {
+        grid-area: imagen2;
+    }
+
+    .imagen3 {
+        grid-area: imagen3;
+    }
+
+    .imagen4 {
+        grid-area: imagen4;
+    }
+
+    main div .l {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagen5 imagen6"
+            "imagen7 imagen8";
+        margin: 1rem 1rem 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .imagen5 {
+        grid-area: imagen5;
+    }
+
+    .imagen6 {
+        grid-area: imagen6;
+    }
+
+    .imagen7 {
+        grid-area: imagen7;
+    }
+
+    .imagen8 {
+        grid-area: imagen8;
+    }
+
+    main div .s {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagen9 imagen10"
+            "imagen11 imagen12";
+        margin: 1rem 1rem 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .imagen9 {
+        grid-area: imagen9;
+    }
+
+    .imagen10 {
+        grid-area: imagen10;
+    }
+
+    .imagen11 {
+        grid-area: imagen11;
+    }
+
+    .imagen12 {
+        grid-area: imagen12;
+    }
+
+    main div .p {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "imagen13 imagen14"
+            "imagen15 imagen16";
+        margin: 1rem 1rem 3rem 1rem;
+        gap: 1rem;
+    }
+
+    .imagen13 {
+        grid-area: imagen13;
+    }
+
+    .imagen14 {
+        grid-area: imagen14;
+    }
+
+    .imagen15 {
+        grid-area: imagen15;
+    }
+
+    .imagen16 {
+        grid-area: imagen16;
+    }
+
+    main div .cocina {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 50%);
+        grid-template-areas:
+            "cocina-1 cocina-2"
+            "cocina-3 cocina-4"
+            "cocina-5 cocina-6"
+            "cocina-7 cocina-7";
+        margin: 1rem 1rem 27rem 1rem;
+        gap: 1rem;
+    }
+
+    .cocina-1 {
+        grid-area: cocina-1;
+    }
+
+    .cocina-2 {
+        grid-area: cocina-2;
+    }
+
+    .cocina-3 {
+        grid-area: cocina-3;
+    }
+
+    .cocina-4 {
+        grid-area: cocina-4;
+    }
+
+    .cocina-5 {
+        grid-area: cocina-5;
+    }
+
+    .cocina-6 {
+        grid-area: cocina-6;
+    }
+
+    .cocina-7 {
+        grid-area: cocina-7;
+        column-span: 2;
+
+    }
+
+    main div .baño {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 60%);
+        grid-template-areas:
+            "baño-1 baño-2"
+            "baño-3 baño-5"
+            "baño-4 baño-4";
+        margin: 1rem 1rem 21rem 1rem;
+        gap: 1rem;
+    }
+
+    .baño-1 {
+        grid-area: baño-1;
+    }
+
+    .baño-2 {
+        grid-area: baño-2;
+    }
+
+    . baño-3 {
+        grid-area: baño-3;
+    }
+
+
+    .baño-4 {
+        grid-area: baño-4;
+        column-span: 2;
+    }
+
+    . baño-5 {
+        grid-area: baño-5;
+    }
+
+    main div .otros {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 90%);
+        grid-template-areas:
+            "otros-1 otros-1"
+            "otros-2 otros-2";
+        margin: 1rem 1rem 20rem 1rem;
+        gap: 1rem;
+    }
+
+    .otros-1 {
+        grid-area: otros-1;
+        column-span: 2;
+    }
+
+    .otros-2 {
+        grid-area: otros-2;
+        column-span: 2;
+    }
+}
+
+/*estilos para destop*/
+
+@media screen and (min-width: 1024px) {
+
+    main div .m {
+        height: 70vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 50%);
+        grid-template-areas:
+            "imagen1 imagen2 imagen3 imagen4";
+        margin: 2rem 1rem 1rem 1rem;
+    }
+
+    main div .l {
+        height: 70vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 50%);
+        grid-template-areas:
+            "imagen5 imagen6 imagen7 imagen8";
+        margin: 2rem 1rem 1rem 1rem;
+    }
+
+    main div .s {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 50%);
+        grid-template-areas:
+            "imagen9 imagen10 imagen11 imagen12";
+        margin: 2rem 1rem 1rem 1rem;
+    }
+
+    main div .p {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 50%);
+        grid-template-areas:
+            "imagen13 imagen14 imagen15 imagen16";
+        margin: 2rem 1rem 1rem 1rem;
+    }
+
+    main div .cocina {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 80%);
+        grid-template-areas:
+            "cocina-1 cocina-2"
+            "cocina-3 cocina-4"
+            "cocina-5 cocina-6"
+            "cocina-7 cocina-7";
+        margin: 1rem 1rem 63rem 1rem;
+        gap: 1rem;
+    }
+
+    main div .baño {
+        height: 85vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 95%);
+        grid-template-areas:
+            "baño-1 baño-2"
+            "baño-3 baño-5"
+            "baño-4 baño-4";
+        margin: 1rem 1rem 65rem 1rem;
+    }
+
+    main div .otros {
+        height: 85vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 95%);
+        grid-template-areas:
+            "otros-1"
+            "otros-2";
+        margin: 1rem 1rem 33rem 1rem;
+    }
+}
