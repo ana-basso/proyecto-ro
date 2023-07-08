@@ -87,11 +87,11 @@ main .parrafo {
 
 }
 
-.acordion-item:not(.collapsed).acordion-button:not(.collapsed) {
+.acordion-item:not(.collapsed).acordion-button:not(.collapsed){
     border-color: transparent;
 }
 
-.accordion-button :focus {
+.accordion-button:focus {
     outline: none !important;
     box-shadow: none !important;
 }
